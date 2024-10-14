@@ -1,5 +1,5 @@
 .header {
-    background-color: #37384b;
+    background-color: #303141;
     height: 68px;
     display: flex; 
     align-items: center;
@@ -87,7 +87,6 @@
   
   .currency-btn {
     color: #fff;
-    font-weight: bold;
     font-size: 16px;
     display: flex;
     align-items: center;

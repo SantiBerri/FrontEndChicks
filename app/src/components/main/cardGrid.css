@@ -1,0 +1,53 @@
+.card-grid-container {
+    width: 1146px; /* Ancho del contenedor */
+    height: 1234px; /* Alto del contenedor */
+    background-color: #303141; /* Contenedor gris */
+    padding: 20px; /* Espacio alrededor del contenedor */
+    border-radius: 2px; /* Bordes redondeados */
+    margin: 20px auto; /* Espaciado alrededor del contenedor, centrado */
+    overflow-y: auto; /* Permite desplazamiento vertical si el contenido excede la altura */
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 5 tarjetas por fila */
+    gap: 20px; /* Espacio entre tarjetas */
+}
+
+.text {
+    color: white;
+}
+
+.showing {
+    color: white;
+    margin-left:30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.filter-bar {
+    display: flex; /* Para alinear los elementos en línea */
+    justify-content: space-between; /* Espacio entre el select y la barra de búsqueda */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-bottom: 20px; /* Espacio debajo del filtro */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+}
+
+.game-select {
+    width: 40%; /* Ancho del select */
+    padding: 10px; /* Espacio interno */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Bordes */
+    background-color: #fff; /* Fondo blanco */
+    margin-left: 100px auto;
+}
+
+.search-bar {
+    width: 50%; /* Ancho de la barra de búsqueda */
+    padding: 10px; /* Espacio interno */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Bordes */
+    background-color: #fff; /* Fondo blanco */
+    margin-right: 100px auto;
+    margin-left: 100px auto;
+}

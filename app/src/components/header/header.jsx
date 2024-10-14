@@ -51,6 +51,12 @@ const Header = () => {
             <i className="dropdown-arrow"></i>
           </span>
         </div>
+        <div className="currency-btn">
+          <span>
+            Cart (5) 
+            <i className="dropdown-arrow"></i>
+          </span>
+        </div>
         <button className="sign-up-btn">SIGN IN</button>
       </div>
       </div>

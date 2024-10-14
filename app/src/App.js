@@ -1,17 +1,17 @@
 import './images/background.jpg';
 import './App.css';
 import Header from './components/header/header';
-import Cards from './components/cards/cards';
+import CardGrid from './components/main/cardGrid';
 function App() {
   return (
     <div>
-      <Header/>
+      <Header />
 
-    <div>
-      <Cards/>
-    </div>
-    <div className="fullscreen-background" />
-      
+      <div>
+        <CardGrid />
+      </div>
+
+      <div className="fullscreen-background" />
     </div>
   );
 }
