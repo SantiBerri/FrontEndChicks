@@ -1,0 +1,13 @@
+
+.footer {
+    background-color: #2a2b3b; /* Color de fondo del footer */
+    padding: 20px; /* Espacio interno */
+    text-align: start; /* Centrar contenido */
+  }
+  
+  .footer-image {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del footer */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-left: 200px;
+  }
+  

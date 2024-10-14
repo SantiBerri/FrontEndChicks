@@ -2,6 +2,7 @@ import './images/background.jpg';
 import './App.css';
 import Header from './components/header/header';
 import CardGrid from './components/main/cardGrid';
+import Footer from './components/footer/footer';
 function App() {
   return (
     <div>
@@ -12,6 +13,8 @@ function App() {
       </div>
 
       <div className="fullscreen-background" />
+
+      <Footer />
     </div>
   );
 }
