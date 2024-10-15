@@ -1,6 +1,7 @@
 .card-grid-container {
-    width: 1146px;
-    height: 1234px;
+    width: 90%; /* Ajustado para que ocupe un porcentaje de la pantalla */
+    max-width: 1146px;
+    height: auto; /* Cambiar la altura para que sea dinámica */
     background-color: #303141;
     padding: 20px;
     border-radius: 2px;
@@ -15,42 +16,115 @@
 }
 
 .text {
-    margin-left:15rem;
+    margin-left: 5%; /* Centramos más el título */
     color: white;
+    text-align: center; /* Centramos el texto en pantallas pequeñas */
 }
 
 .showing {
     color: white;
-    margin-left:30px;
+    margin-left: 5%;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
+/* Media query para pantallas más pequeñas */
+@media (max-width: 1024px) {
+    .filter-bar {
+        width: 90%; /* Ajustar el ancho en pantallas más pequeñas */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr); /* Cambiamos a 3 columnas */
+    }
+}
+
+@media (max-width: 768px) {
+    .filter-bar {
+        flex-direction: column; /* Cambiar a columna en dispositivos pequeños */
+        align-items: flex-start;
+    }
+
+    .game-select, .search-bar {
+        width: 100%; /* Hacemos que ocupen todo el ancho */
+        margin-bottom: 10px; /* Espaciado entre los elementos */
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr); /* Cambiamos a 2 columnas */
+    }
+
+    .showing {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-grid {
+        grid-template-columns: 1fr; /* Solo una columna en pantallas muy pequeñas */
+    }
+
+    .filter-bar, .top-bar {
+        width: 100%; /* Aseguramos que ocupen el 100% del ancho */
+    }
+
+    .filter-select {
+        width: 100%; /* Ajustamos el select también */
+    }
+
+    .showing {
+        text-align: center; /* Centrado en pantallas pequeñas */
+        margin: 10px 0;
+    }
+
+    .top-bar {
+        flex-direction: column; /* Hacemos que los elementos se apilen verticalmente */
+        align-items: center;
+    }
+}
+
 .filter-bar {
-    background:none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    width: 70%;
-    margin-left: 15rem;
-    margin-right:20rem;
+    width: 70%; 
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    position: relative; 
 }
 
 .game-select {
+    position: relative;
     color: white;
     width: 40%;
-    padding: 10px;
+    padding: 10px 40px 10px 15px; 
     border-radius: 2px;
-    background-color: rgba(128, 128, 128, 0.3); 
-
+    background-color: rgba(128, 128, 128, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    appearance: none; 
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
 }
 
 .search-bar {
+    position: relative;
     width: 50%;
-    padding: 10px;
+    padding: 10px 40px 10px 15px; 
     border-radius: 2px;
-    background-color: rgba(128, 128, 128, 0.3); 
+    background-color: rgba(128, 128, 128, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
 }
 
 .top-bar {
@@ -58,14 +132,19 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    margin-right:2rem ;
+    color: white;
 }
 
 .filter-select {
+    position: relative;
     color: white;
     width: 200px;
-    padding: 10px;
+    padding: 10px 40px 10px 15px; 
     border-radius: 2px;
-    background-color: rgba(128, 128, 128, 0.3); 
-    border: 1px solid #ccc;
+    background-color: rgba(128, 128, 128, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
 }
