@@ -13,6 +13,7 @@
 }
 
 .header {
+    background-color: #37384b;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,11 +37,11 @@
     content: '';
     width: 6px;
     height: 6px;
-    background-color: #00ff00; /* Color verde para el círculo */
+    background-color: #00ff00;
     border-radius: 50%;
     position: absolute;
     top: 50%;
-    left: -10px; /* Ajusta este valor según necesites */
+    left: -10px;
     transform: translateY(-50%);
 }
 

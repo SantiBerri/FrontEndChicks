@@ -35,8 +35,8 @@
   
   .nav-links li:hover {
     cursor: pointer;
-    color: #00ffb3; /* Cambiar color del texto al hover */
-    background-color: #37384b; /* Fondo oscuro en hover */
+    color: #00ffb3; 
+    background-color: #37384b; 
   }
   
   .nav-links li:hover::before {
@@ -46,43 +46,43 @@
     top: 0;
     width: 2px;
     height: 100%;
-    background-color: #00ffb3; /* Barra vertical en hover */
+    background-color: #00ffb3;
   }
   
   .nav-links span {
-    color: inherit; /* Hereda el color en hover */
+    color: inherit;
     text-transform: uppercase;
     display: flex;
     align-items: center;
-    gap: 5px; /* Espacio entre el texto y la flecha */
+    gap: 5px;
   }
   
   .nav-links li:hover span {
-    color: #00ffb3; /* Cambiar el color en hover */
+    color: #00ffb3;
   }
   
-  /* Flechitas en los botones */
+ 
   .nav-links .dropdown-arrow {
     border: solid currentColor;
     border-width: 0 2px 2px 0;
     display: inline-block;
     padding: 3px;
-    transform: rotate(45deg); /* Flecha por defecto hacia abajo */
-    transition: transform 0.3s ease, color 0.3s; /* Animación en la rotación */
+    transform: rotate(45deg);
+    transition: transform 0.3s ease, color 0.3s;
     margin-left:5px;
   }
   
   .nav-links li:hover .dropdown-arrow {
-    color: #00ffb3; /* Cambiar el color de la flecha al hacer hover */
-    transform: rotate(225deg); /* Rotar la flecha hacia arriba */
+    color: #00ffb3;
+    transform: rotate(225deg);
   }
 
   .right-section {
     margin-right:20px;
-    margin-left: auto; /* Mueve esta sección a la derecha */
+    margin-left: auto;
     display: flex;
     align-items: center;
-    gap: 15px; /* Espacio entre los botones */
+    gap: 15px;
   }
   
   .currency-btn {
@@ -106,7 +106,7 @@
     transform: rotate(225deg);
   }
   
-  /* Botón de Sign Up */
+ 
   .sign-up-btn {
     height: 40px;
     width: 106px;

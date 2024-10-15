@@ -1,20 +1,21 @@
 .card-grid-container {
-    width: 1146px; /* Ancho del contenedor */
-    height: 1234px; /* Alto del contenedor */
-    background-color: #303141; /* Contenedor gris */
-    padding: 20px; /* Espacio alrededor del contenedor */
-    border-radius: 2px; /* Bordes redondeados */
-    margin: 20px auto; /* Espaciado alrededor del contenedor, centrado */
-    overflow-y: auto; /* Permite desplazamiento vertical si el contenido excede la altura */
+    width: 1146px;
+    height: 1234px;
+    background-color: #303141;
+    padding: 20px;
+    border-radius: 2px;
+    margin: 20px auto;
+    overflow-y: auto;
 }
 
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 5 tarjetas por fila */
-    gap: 20px; /* Espacio entre tarjetas */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
 .text {
+    margin-left:15rem;
     color: white;
 }
 
@@ -26,28 +27,45 @@
 }
 
 .filter-bar {
-    display: flex; /* Para alinear los elementos en línea */
-    justify-content: space-between; /* Espacio entre el select y la barra de búsqueda */
-    align-items: center; /* Centra verticalmente los elementos */
-    margin-bottom: 20px; /* Espacio debajo del filtro */
-    width: 100%; /* Ocupa todo el ancho del contenedor */
+    background:none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 70%;
+    margin-left: 15rem;
+    margin-right:20rem;
 }
 
 .game-select {
-    width: 40%; /* Ancho del select */
-    padding: 10px; /* Espacio interno */
-    border-radius: 5px; /* Bordes redondeados */
-    border: 1px solid #ccc; /* Bordes */
-    background-color: #fff; /* Fondo blanco */
-    margin-left: 100px auto;
+    color: white;
+    width: 40%;
+    padding: 10px;
+    border-radius: 2px;
+    background-color: rgba(128, 128, 128, 0.3); 
+
 }
 
 .search-bar {
-    width: 50%; /* Ancho de la barra de búsqueda */
-    padding: 10px; /* Espacio interno */
-    border-radius: 5px; /* Bordes redondeados */
-    border: 1px solid #ccc; /* Bordes */
-    background-color: #fff; /* Fondo blanco */
-    margin-right: 100px auto;
-    margin-left: 100px auto;
+    width: 50%;
+    padding: 10px;
+    border-radius: 2px;
+    background-color: rgba(128, 128, 128, 0.3); 
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right:2rem ;
+}
+
+.filter-select {
+    color: white;
+    width: 200px;
+    padding: 10px;
+    border-radius: 2px;
+    background-color: rgba(128, 128, 128, 0.3); 
+    border: 1px solid #ccc;
 }
