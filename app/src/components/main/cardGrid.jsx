@@ -23,7 +23,6 @@ const CardGrid = () => {
       </div>
       
       <div className="card-grid-container">
-        {/* Contenedor para alinear el span y el select */}
         <div className="top-bar">
           <span className="showing">Showing 20 - from 125</span>
           <select className="filter-select">

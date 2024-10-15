@@ -122,28 +122,28 @@
   color: #fff;
 }
 
-/* Estilos Responsivos */
 
-/* Media Query para pantallas medianas */
+
+
 @media (max-width: 1024px) {
   .nav-links {
-      gap: 15px; /* Reducimos el espacio entre enlaces */
+      gap: 15px;
   }
 
   .logo {
-      width: 180px; /* Redimensionamos el logo */
+      width: 180px;
       margin-right: 5px;
   }
 
   .sign-up-btn {
-      width: 90px; /* Ajustamos el tamaño del botón de registro */
+      width: 90px;
   }
 }
 
-/* Media Query para pantallas pequeñas (tablets y móviles grandes) */
+
 @media (max-width: 768px) {
   .header {
-      flex-direction: column; /* Cambiamos la dirección del flex a columna */
+      flex-direction: column;
       height: auto;
   }
 
@@ -159,7 +159,7 @@
   }
 
   .currency-btn {
-      padding: 8px 16px; /* Ajustamos el tamaño del botón */
+      padding: 8px 16px;
   }
 
   .sign-up-btn {
@@ -168,10 +168,10 @@
   }
 }
 
-/* Media Query para pantallas muy pequeñas (móviles) */
+
 @media (max-width: 480px) {
   .logo {
-      width: 150px; /* Aún más pequeño para pantallas móviles */
+      width: 150px;
   }
 
   .nav-links li {

@@ -1,7 +1,7 @@
 .card-grid-container {
-    width: 90%; /* Ajustado para que ocupe un porcentaje de la pantalla */
+    width: 90%;
     max-width: 1146px;
-    height: auto; /* Cambiar la altura para que sea dinámica */
+    height: auto;
     background-color: #303141;
     padding: 20px;
     border-radius: 2px;
@@ -16,9 +16,9 @@
 }
 
 .text {
-    margin-left: 5%; /* Centramos más el título */
+    margin-left: 5%;
     color: white;
-    text-align: center; /* Centramos el texto en pantallas pequeñas */
+    text-align: center;
 }
 
 .showing {
@@ -28,32 +28,32 @@
     margin-bottom: 30px;
 }
 
-/* Media query para pantallas más pequeñas */
+
 @media (max-width: 1024px) {
     .filter-bar {
-        width: 90%; /* Ajustar el ancho en pantallas más pequeñas */
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
 
     .card-grid {
-        grid-template-columns: repeat(3, 1fr); /* Cambiamos a 3 columnas */
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (max-width: 768px) {
     .filter-bar {
-        flex-direction: column; /* Cambiar a columna en dispositivos pequeños */
+        flex-direction: column;
         align-items: flex-start;
     }
 
     .game-select, .search-bar {
-        width: 100%; /* Hacemos que ocupen todo el ancho */
-        margin-bottom: 10px; /* Espaciado entre los elementos */
+        width: 100%;
+        margin-bottom: 10px;
     }
 
     .card-grid {
-        grid-template-columns: repeat(2, 1fr); /* Cambiamos a 2 columnas */
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .showing {
@@ -64,24 +64,24 @@
 
 @media (max-width: 480px) {
     .card-grid {
-        grid-template-columns: 1fr; /* Solo una columna en pantallas muy pequeñas */
+        grid-template-columns: 1fr;
     }
 
     .filter-bar, .top-bar {
-        width: 100%; /* Aseguramos que ocupen el 100% del ancho */
+        width: 100%;
     }
 
     .filter-select {
-        width: 100%; /* Ajustamos el select también */
+        width: 100%;
     }
 
     .showing {
-        text-align: center; /* Centrado en pantallas pequeñas */
+        text-align: center;
         margin: 10px 0;
     }
 
     .top-bar {
-        flex-direction: column; /* Hacemos que los elementos se apilen verticalmente */
+        flex-direction: column;
         align-items: center;
     }
 }
